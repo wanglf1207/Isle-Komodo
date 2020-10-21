@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /komodo
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.231.130:3306/komodo?setUnicode=true&characterEncoding=utf8&useSSL=true
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Wanglf1207!
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
