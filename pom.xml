@@ -49,12 +49,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.13</version>
         </dependency>
-        <!-- isle tools -->
-        <dependency>
-            <groupId>com.isle.mauritius</groupId>
-            <artifactId>isle.mauritius</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
