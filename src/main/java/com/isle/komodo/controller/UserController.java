@@ -19,8 +19,10 @@ public class UserController {
 
     @RequestMapping(value = "admin/login",method = RequestMethod.POST)
     public CommonResult userLogin(@RequestBody User user) {
-        if (user.getUsername().equals("admin") && user.getPassword().equals("123456"))
-            return CommonResult.success("王皓");
+
+        User returnUser = userService.login(user);
+        if (returnUser != null)
+            return CommonResult.success(returnUser.getUsername());
         else
             return CommonResult.validateFailed();
     }
